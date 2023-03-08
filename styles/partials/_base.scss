@@ -6,3 +6,19 @@
   box-sizing: border-box;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+
+// variables
+$baseFontSize: 13px;
+$userStatusOpacity: 0.5;
+$paragraphOpacity: 0.7;
+$padding: calc($baseFontSize * 2.5);
+$gap-1: calc($baseFontSize * 0.125);
+$gap-2: calc($baseFontSize * 1.05);
+
+// colors
+$color-1: hsl(263, 55%, 52%);
+$color-2: hsl(217, 19%, 35%);
+$color-3: hsl(219, 29%, 14%);
+$color-4: hsl(0, 0%, 100%);
+$neutral-1: hsl(0, 0%, 81%);
+$neutral-2: hsl(210, 46%, 95%);

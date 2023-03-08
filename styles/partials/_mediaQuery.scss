@@ -1,0 +1,73 @@
+// tablet layout
+@media screen and (min-width:640px) {
+    // wrapper 
+    main > section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        max-width: 45rem;
+        
+        & > .article {
+            &--1 {
+                grid-column: 1 / -1;
+                grid-row:  1 / 2;
+            }
+            &--2 {
+                grid-column: 2 / -1;
+                grid-row:  2 / 3;
+            }
+            &--3 {
+                grid-column: 2 / -1;
+                grid-row:  3 / 4;
+            }
+            &--4 {
+                grid-column: 1 / -1;
+                grid-row: 4 / 5;
+            }
+            &--5 {
+                grid-column: 1 / 2;
+                grid-row: 2 / 4;
+            }
+          }
+    }
+}
+
+// laptop layout
+@media screen and (min-width:640px) {
+    // wrapper 
+    main > section {
+        max-width: 50rem;
+    }
+}
+
+// larger desktop layout
+@media screen and (min-width:1280px) {
+    main > section {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        max-width: 75rem;
+
+        & > .article {
+            &--1 {
+                grid-column: 1 / 3;
+                grid-row: 1 / 2;
+            }
+            &--2 {
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+            }
+            &--3 {
+                grid-column: 1 / 2;
+                grid-row: 2 / -1;
+            }
+            &--4 {
+                grid-column: 2 / 4;
+                grid-row: 2 / -1;
+            }
+            &--5 {
+                grid-column: 4 / 5;
+                grid-row: 1 / -1;
+
+            }
+          }
+    }
+}

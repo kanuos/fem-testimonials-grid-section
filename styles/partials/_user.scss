@@ -1,0 +1,34 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  gap: $gap-2;
+  &__img {
+    display: block;
+    height: calc($baseFontSize * 2.25);
+    width: calc($baseFontSize * 2.25);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    padding: calc($baseFontSize * 0.125);
+    background-color: inherit;
+    box-shadow: 0 1px 1rem rgba(0 0 0 / 0.125);
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $gap-1;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: $baseFontSize;
+  }
+  &__status {
+    font-weight: 500;
+    opacity: $userStatusOpacity;
+    font-size: calc($baseFontSize * 0.75);
+  }
+}

@@ -1,1 +1,26 @@
 @import "./partials/base";
+@import "./partials/article";
+
+main {
+  display: grid;
+  gap: $gap-2;
+  background: $neutral-2;
+  position: relative;
+  padding: $padding;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  h1.attribution {
+    position: absolute;
+    transform: scale(0) translate(-9000%, -90000%);
+    pointer-events: none;
+  }
+
+  & > section {
+    display: grid;
+    gap: calc($gap-2 * 1.5);
+    margin: auto auto;
+  }
+}
+
+@import "./partials/mediaQuery";
